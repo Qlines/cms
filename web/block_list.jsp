@@ -41,25 +41,6 @@
              **/
 
             function _onsubmit() {
-                /**
-                 var frm = document.forms["blockedListFrm"];
-                 
-                 // Date validate
-                 if (!isValidDate(frm.fday.value, frm.fmonth.value ,frm.fyear.value)) {
-                 alert('From date is not valid.');
-                 frm.fday.focus();
-                 return false;
-                 }
-                 if (!isValidDate(frm.tday.value, frm.tmonth.value ,frm.tyear.value)) {
-                 alert('To date is not valid.');
-                 frm.tday.focus();
-                 return false;
-                 }
-                 
-                 
-                 frm.fdate.value = frm.fyear.value + "-" + frm.fmonth.value + "-" + frm.fday.value;
-                 frm.tdate.value = frm.tyear.value + "-" + frm.tmonth.value + "-" + frm.tday.value;
-                 **/
 
                 // leave it when production
                 //alert(frm.fdate.value + " : " + frm.tdate.value);
