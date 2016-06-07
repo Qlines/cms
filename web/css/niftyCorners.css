@@ -1,0 +1,65 @@
+.nifty body{font:76% "Trebuchet MS",arial,sans-serif;color: #333;text-align:center;padding: 20px}
+h1,h2{padding-left: 15px;margin: 0}
+h2{font-size: 160%;color: #555}
+div#refresh h4{text-align:center; font-size: 75%;color: #FFF; line-height:0.8em;}
+div#menu{padding: 0px;background-color: #FFF;border-bottom:1px solid #999;
+    font: 76% Verdana,Arial,sans-serif;float:left;width: 100%;padding-top:10px;background: url(../images/navbk.jpg)}
+ul#nav,ul#nav li{list-style-type:none;margin:0;padding:0}
+ul#nav{padding-left: 15px}
+ul#nav li{float:left;width:101px;margin-right:2px;text-align: center;color: #555}
+ul#nav a{float:left;width:101px;padding: 2px 0 5px;text-decoration:none;background: #BEFF9A;color: #999;text-align: center;}
+ul#nav li.activelink a,ul#nav a:hover{color: #000;}
+ul#nav {color: #000;background: #BEFF9A;}
+
+div#container {
+    width:600px;
+    margin: 0 0 10px 0;
+    text-align:
+    left;border: 0
+}
+div#content {
+    background: #377CB1;
+}
+div#nav {
+    background: #E5FFC4;
+    width:120px;
+    margin: 10px;
+    border: 0px
+}
+div#nav span {
+    font-family: "Arial";
+    margin: 10px;
+    font-size: 11px;
+    font-weight: bold;
+    color: #4444FF;
+    line-height:150%;
+    text-align: center;
+    text-decoration:none;
+}
+div#hiddentab {
+    background: #BBB;
+    width:120px;
+    margin: 10px;
+    border: 0px
+}
+div#hiddentab span {
+    font-family: "Arial";
+    margin: 10px;
+    font-size: 11px;
+    font-weight: bold;
+    color: #FFF;
+    line-height:150%;
+    text-align: center;
+}
+.info P{padding-left:10px;margin: 10px;font-size: 80%;color: #ffffff;}
+.info P SPAN{font-size: 120%;color: #ffffff;}
+
+.rtop,.rbottom{display:block}
+.rtop *,.rbottom *{display:block;height: 1px;overflow: hidden}
+.r1{margin: 0 5px}
+.r2{margin: 0 3px}
+.r3{margin: 0 2px}
+.r4{margin: 0 1px;height: 2px}
+
+.rs1{margin: 0 2px}
+.rs2{margin: 0 1px}

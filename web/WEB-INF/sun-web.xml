@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sun-web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Application Server 9.0 Servlet 2.5//EN" "http://www.sun.com/software/appserver/dtds/sun-web-app_2_5-0.dtd">
+<sun-web-app error-url="">
+    <context-root>/cmsv2</context-root>
+    <security-role-mapping>
+        <role-name>admin</role-name>
+        <group-name>admin</group-name>
+    </security-role-mapping>
+    <security-role-mapping>
+        <role-name>user</role-name>
+        <group-name>guest</group-name>
+    </security-role-mapping>
+    <security-role-mapping>
+        <role-name>superuser</role-name>
+        <group-name>manager</group-name>
+    </security-role-mapping>
+    <class-loader delegate="true"/>
+    <jsp-config>
+        <property name="keepgenerated" value="true">
+            <description>Keep a copy of the generated servlet class' java code.</description>
+        </property>
+    </jsp-config>
+    <session-config>
+        <cookie-properties>
+            <property name="cmsv2_cookies" value="1900888.com"/>
+        </cookie-properties>
+    </session-config>
+    <ejb-ref>
+        <ejb-ref-name>HybridDispatcherRef</ejb-ref-name>
+        <jndi-name>corbaname:iiop:smsgatewayais:3700#hippoping.smsgw.api.operator.ais.HybridDispatcherRemote</jndi-name>
+    </ejb-ref>
+    <ejb-ref>
+        <ejb-ref-name>TypeLDispatcherRef</ejb-ref-name>
+        <jndi-name>corbaname:iiop:smsgatewayais:3700#hippoping.smsgw.api.operator.ais.TypeLDispatcherRemote</jndi-name>
+    </ejb-ref>
+    <ejb-ref>
+        <ejb-ref-name>TruemoveHandleRequestRef</ejb-ref-name>
+        <jndi-name>corbaname:iiop:truecssgateway:3700#hippoping.smsgw.api.operator.true_css.MoEventBeanRemote</jndi-name>
+    </ejb-ref>
+    <ejb-ref>
+        <ejb-ref-name>TruehHandleRequestRef</ejb-ref-name>
+        <jndi-name>corbaname:iiop:truecssgateway:3700#TrueH_MoEventBean</jndi-name>
+    </ejb-ref>
+    <!--
+    <ejb-ref>
+        <ejb-ref-name>DtacHandleRequestRef</ejb-ref-name>
+        <jndi-name>corbaname:iiop:smsgatewaydtac:3700#hippoping.smsgw.api.operator.dtac.DtacMoEventEJBRemote</jndi-name>
+    </ejb-ref>
+    -->
+    <ejb-ref>
+        <ejb-ref-name>DtacSdpHandleRequestRef</ejb-ref-name>
+        <jndi-name>corbaname:iiop:smsgatewaydtac:3700#hippoping.smsgw.api.operator.dtac_sdp.DtacMoEventEJBRemote</jndi-name>
+    </ejb-ref>
+</sun-web-app>

@@ -1,0 +1,75 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="./css/cv.css" rel="stylesheet" type="text/css">
+        <link href="./css/niftyCorners.css" rel="stylesheet" type="text/css">
+        <link href="./css/niftyPrint.css" rel="stylesheet" type="text/css" media="print">
+        <link rel="stylesheet" type="text/css" href="./css/dashboard.css" media="screen" />
+        <style type="text/css">
+            body{margin:0px; padding: 5px; background: black;
+                 font: 100.01% "Trebuchet MS",Verdana,Arial,sans-serif}
+            h1,h2,p{margin: 0 10px}
+            h1{font-size: 250%;color: #FFF}
+            h2{font-size: 200%;color: #f0f0f0}
+            p{padding-bottom:1em}
+            h2{padding-top: 0.3em}
+            input.shorttext{width:150px}
+            input.longtext{width:300px;}
+            input.number{width:50px;}
+        </style>
+        <script src="./js/nifty.js" type="text/javascript"></script>
+        <script src='./js/utils.js' type='text/javascript'></script>
+        <script src='./js/filter_input.js' type='text/javascript'></script>
+        <script src='./js/webstyle.js' type='text/javascript'></script>
+        <script src='./js/datetime.js' type='text/javascript'></script>
+        <script type="text/javascript">
+
+            function _onsubmit() {
+                var frm = document.forms["smsRingtoneNewFrm"];
+
+                if (frm.content.value.trim() == '') {
+                    alert("Please enter ringtone filename for upload!!");
+                    frm.url.select();
+                    frm.url.focus();
+                    return false;
+                }
+
+                // close after submit
+                window.close();
+
+                // test
+                //return false;
+            }
+
+            window.onload=function() {
+                if(NiftyCheck())Rounded("div#content","#C0CDF2","#377CB1");
+                if(NiftyCheck())Rounded("div#content2","#377CB1","#FFF");
+            }
+        </script>
+    </head>
+    <body class="content">
+        <form name="smsRingtoneNewFrm" target="sms_ringtone" action="SmsRingtoneListServlet" ENCTYPE="multipart/form-data" method="POST" onsubmit="return _onsubmit()">
+            <div id="content" style="width:100%">
+                <h2>Add SMS Ringing Tone</h2><hr>
+                <div id="content2" style="width:95%; text-align:center; background-color:#FFF; margin:10px; padding:0px;">
+                    <table align="center" class="table4" style="width:90%; margin:20px 0 20px 0; padding:0;">
+                        <tr>
+                            <th style="border-bottom:0px;">Audio File (*.mid, *.wav, *.mp3):</th>
+                            <td><input type="file" name="content" value="" size="20" />
+                            </td>
+                        </tr>
+                    </table>
+                    <div style="margin: 20px 0 20px 50px;">
+                        <input type="submit" value="Upload">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
