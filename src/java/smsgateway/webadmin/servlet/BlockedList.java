@@ -63,8 +63,6 @@ public class BlockedList extends HttpServlet {
             } else {
                 String msisdn = "";
                 String blocked = "";
-                //String fdate = "";
-                //String tdate = "";
                 String orderby = request.getParameter("orderby");
                 String page = request.getParameter("page");
                 String swap = request.getParameter("swap");
