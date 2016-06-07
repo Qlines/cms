@@ -91,14 +91,6 @@
 
             window.onload = function() {
 
-                /**
-                 var frm = document.forms["blockedListFrm"];
-                 
-                 frm.fdate.value = frm.fyear.value + "-" + frm.fmonth.value + "-" + frm.fday.value;
-                 frm.tdate.value = frm.tyear.value + "-" + frm.tmonth.value + "-" + frm.tday.value;
-                 frm.submit();
-                 **/
-
                 if (NiftyCheck())
                     Rounded("div#pushMessageHistory", "#C0CDF2", "#FFF");
             }
